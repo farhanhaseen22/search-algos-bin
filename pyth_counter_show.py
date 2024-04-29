@@ -1,10 +1,9 @@
 from collections import Counter
 
 letters = Counter("mississippi")
-letters["p"]
 
-letters["s"]
-
+print(letters["p"])
+print(letters["s"])
 
 for letter in letters:
     print(letter, letters[letter])
@@ -18,7 +17,6 @@ for count in letters.values():
 for letter, count in letters.items():
     print(letter, count)
 
-
 def print_ascii_bar_chart(data, symbol="#"):
     counter = Counter(data).most_common()
     chart = {category: symbol * frequency for category, frequency in counter}
@@ -27,3 +25,5 @@ def print_ascii_bar_chart(data, symbol="#"):
         padding = (max_len - len(category)) * " "
         print(f"{category}{padding} |{frequency}")
 
+
+print_ascii_bar_chart("mississippi")
