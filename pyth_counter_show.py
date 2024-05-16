@@ -15,6 +15,9 @@ for count in letters.values():
     print(count)
 
 for letter, count in letters.items():
+    arr = (letter, count)
+
+for letter, count in letters.items():
     print(letter, count)
 
 def print_ascii_bar_chart(data, symbol="#"):
