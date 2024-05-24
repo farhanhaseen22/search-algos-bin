@@ -50,3 +50,5 @@ class words_counter(object):
     def disp_top_words(self):
         for word in self.top_words:
             print(word, self.word_freq[word])
+
+# possible main function here

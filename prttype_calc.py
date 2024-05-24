@@ -22,6 +22,12 @@ def div(x, y):
     return value
 
 
+def exponent(x, y):
+    X1 = None
+    
+    return x * y
+
+
 def num_input(prompt='Enter a number: '):
     while True:
         try:
