@@ -27,3 +27,22 @@ print(f"List4: {list4}\n")
 list5 = sorted(list4)
 print(f"List5: {list5}\n")
 
+
+# ===================== Fau code shudu uplood korar jonno =====================
+
+# Function to sort a list in ascending and descending order
+def sort_list(strings):
+    ascending = sorted(strings)
+    descending = sorted(strings, reverse=True)
+    return ascending, descending
+
+# Example usage:
+strings = ["banana", "apple", "cherry", "date"]
+
+# Get the sorted lists
+ascending_order, descending_order = sort_list(strings)
+
+print(f"Original list: {strings}")
+print(f"Ascending order: {ascending_order}")
+print(f"Descending order: {descending_order}")
+
